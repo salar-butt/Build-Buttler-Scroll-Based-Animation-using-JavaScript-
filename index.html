@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Buttler</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+</head>
+<body>
+    <div class="scroll-watcher"></div>
+    <div class="imgs">
+        <img src="./img/cheesdish.jpeg" data-img id="img-1" class="top-section-img show" alt="">
+        <img src="./img/about.jpg" data-img id="img-2" alt="">
+        <img src="./img/restaurent.jpg" data-img id="img-3" alt="">
+    </div>
+    <section class="top-section full-screen-section onee" data-aos="fade-right" data-aos-duration="3000">
+        <div class="left">
+            <h1>Build Better Backends</h1>
+            <p>The only platform that gives the AI the ability to autonomously build web sites/services</p>
+        </div>
+        <div class="right"></div>
+    </section>
+    <section class="full-screen-section first-main-section twoo" data-aos="fade-left" data-aos-duration="3000">
+        <h1>Completely Visual</h1>
+        <p>Never touch the command line from provision to production</p>
+        <div data-img-to-show="#img-1"></div>
+    </section>
+    <section class="full-screen-section threee" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="3000">
+        <h1>Full Stack</h1>
+        <p>Never manage infrastructure again, one click gets you a Database, APIs, etc.</p>
+        <div data-img-to-show="#img-2"></div>
+    </section>
+    <section class="full-screen-section fourr" data-aos="zoom-in-left" data-aos-duration="3000">
+        <h1>Launch faster</h1>
+        <p>Logical can get the system to market in minutes instead of weeks</p>
+        <div data-img-to-show="#img-3"></div>
+    </section>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
